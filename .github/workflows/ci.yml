@@ -18,7 +18,9 @@ jobs:
 
       - name: Run Biome
         run: biome ci .
+
   publish:
+    if: github.repository == 'meshtastic/node-red-contrib-meshtastic'
     runs-on: ubuntu-latest
     permissions:
       contents: read
