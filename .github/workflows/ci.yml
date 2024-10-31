@@ -4,6 +4,7 @@ on: push
 
 jobs:
   quality:
+    if: github.repository == 'meshtastic/node-red-contrib-meshtastic'
     runs-on: ubuntu-latest
     permissions:
       contents: read
